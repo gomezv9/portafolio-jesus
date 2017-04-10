@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="504px" height="523px" viewBox="0 0 504 523" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>1549540_569386473149763_2045097438_n</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-14.2%" y="-8.8%" width="128.3%" height="127.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="22" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.141276042 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="59.5217072%" y1="100%" x2="0%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#04A5C1" offset="0%"></stop>
+            <stop stop-color="#82E197" offset="66.1670624%"></stop>
+            <stop stop-color="#F9F981" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0.957551297,0.424880423 L0.957551297,38.1186745 C0.957551297,65.4034484 0.957551297,88.1580508 50.3231714,87.5355844 L82.7130982,87.5355844 L82.7130982,278.930147 C82.7130982,377.044672 162.16791,456.57512 260.173693,456.57512 C358.186386,456.57512 437.634288,377.044672 437.634288,278.930147 C437.634288,180.815621 358.186386,101.285174 260.173693,101.285174 C227.141219,101.285174 196.216024,110.331685 169.73339,126.073166 L169.73339,87.5355844 L169.73339,0.424880423 L0.957551297,0.424880423 Z M172.62816,278.930215 C172.62816,230.528783 211.82927,191.300504 260.173693,191.300504 L260.173693,191.300504 C308.52489,191.300504 347.719227,230.528783 347.719227,278.930215 L347.719227,278.930215 C347.719227,327.331647 308.52489,366.566706 260.173693,366.566706 L260.173693,366.566706 C211.82927,366.566706 172.62816,327.331647 172.62816,278.930215 L172.62816,278.930215 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-347.000000, -161.000000)">
+            <g id="1549540_569386473149763_2045097438_n" filter="url(#filter-1)" transform="translate(380.000000, 172.000000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                <rect id="Rectangle-3" fill="#FFFFFF" mask="url(#mask-4)" x="260" y="42" width="190" height="494"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
