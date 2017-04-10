@@ -1,6 +1,7 @@
 // bower:scss
 // endbower
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
 
 body {
   margin: 0;
@@ -13,6 +14,32 @@ body {
   background:url(../images/bg1.jpg);
   background-size:cover;
   position: relative;
+
+  nav{
+    position: absolute;
+    right:40px;
+    top:40px;
+    z-index: 4;
+    a{
+      display: inline-block;
+      color:#fff;
+      text-decoration: none;
+      margin-right: 30px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      color: #FFFFFF ;
+      letter-spacing: 0;
+      font-weight: 300;
+
+      &:first-child{
+        color: #FF5868;
+      }
+
+      &:last-child{
+        margin-right:0px;
+      }
+    }
+  }
 
   .lineContainer{
     border:1px solid #fff;
@@ -55,6 +82,19 @@ body {
     }
   }
 
+  .iconList{
+    margin: 0;
+    position: absolute;
+    top:59%;
+    left: 9%;
+    z-index: 4;
+    padding-left:0;
+    li{
+      display: inline-block;
+      margin-right: 9px;
+    }
+  }
+
   .name{
     font-family: 'Abril Fatface', cursive;
     font-size: 80px;
@@ -65,6 +105,99 @@ body {
     left: 9%;
     z-index: 4;
     text-shadow: 0 11px 24px rgba(0,0,0,0.47);
+  }
+
+  .subName{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #F6F881 ;
+    letter-spacing: 4px;
+    position: absolute;
+    top:54%;
+    left: 9%;
+    z-index: 4;
+  }
+
+  .copy{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #FFFFFF ;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom:30px;
+    left: 40px;
+    z-index: 4;
+    font-weight: 300;
+  }
+
+  .mainText{
+    position: absolute;
+    top:-10%;
+    right: 0;
+    margin: auto;
+    left: 37%;
+    bottom:0;
+    z-index: 4;
+    height: 500px;
+    .aboutMe{
+      font-family: 'Abril Fatface', cursive;
+      font-size: 60px;
+      color: #FFFFFF ;
+      letter-spacing: 3px;
+      text-shadow: 0 5px 7px rgba(0,0,0,0.20);
+      z-index: 4;
+      height: 70px;
+      margin-bottom: 50px;
+    }
+
+    .textAboutme{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: #FFFFFF ;
+      letter-spacing: 0;
+      line-height: 26px;
+      z-index: 4;
+      max-width: 347px;
+      font-weight: 300;
+    }
+
+    .btnDownload{
+      background: #76D5EA;
+      box-shadow: 0 10px 21px -8px rgba(0, 0, 0, 0.5);
+      background: #FF5867;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      color: #FFFFFF;
+      letter-spacing: 1px;
+      padding:18px 28px;
+      text-decoration: none;
+    }
+
+  }
+
+  .ovalHome{
+    position: absolute;
+    right: 0;
+    bottom:0;
+    z-index: 4;
+  }
+
+  .iconListNet{
+    margin: 0;
+    position: absolute;
+    bottom:30px;
+    right: 40px;
+    z-index: 4;
+    padding-left:0;
+    li{
+      display: inline-block;
+      margin-right: 26px;
+
+      &:last-child{
+        margin-right: 0px;
+      }
+    }
   }
 
 
