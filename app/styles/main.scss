@@ -10,16 +10,104 @@ body {
 
 .container{
   width: 100%;
+  max-width: 100%;
   height: 100vh;
-  background:url(../images/bg1.jpg);
-  background-size:cover;
   position: relative;
+
+  &.home{
+    background:url(../images/bg1.jpg);
+    background-size:cover;
+
+    nav{
+
+      a{
+
+        &:first-child{
+          color: #FF5868;
+        }
+
+      }
+    }
+
+  }
+
+  &.works{
+    background: url(../images/ovalsWorks.png) no-repeat center, linear-gradient(-46deg, #04A5C1 0%, #9FE791 100%);
+
+    nav{
+      background-color:inherit;
+      width: auto;
+      height: auto;
+      line-height: inherit;
+      box-shadow:none;
+
+      a{
+
+        &:nth-child(2){
+          color: #FF5868;
+        }
+
+      }
+    }
+
+    h1{
+
+        margin-bottom: 50px;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 60px;
+        color: #FFFFFF ;
+        letter-spacing: 3px;
+        text-shadow: 0 5px 7px rgba(0,0,0,0.20);
+        top:100px;
+        position: relative;
+        width: 640px;
+        margin: 0 auto;
+    }
+
+    .carousel {
+      height: 500px !important;
+      z-index: 3;
+      top:120px;
+    }
+
+    .carousel .carousel-item {
+      width: 640px !important;
+      height: 400px !important; 
+      top:-20px;
+    }
+      .carousel .carousel-item div {
+        width: 100%;
+        height: 100%; 
+    }
+
+    .carousel .indicators {
+      height: 40px;
+
+      .indicator-item{
+        width: 10px;
+        height: 10px;
+        background:transparent;
+        border:1px solid #fff;
+        margin-right: 10px;
+
+        &:last-child{
+          margin-right: 0px;
+        }
+
+        &.active{
+          background:#fff;
+        }
+      }
+    }
+
+  }
 
   nav{
     position: absolute;
     right:40px;
     top:40px;
     z-index: 4;
+
     a{
       display: inline-block;
       color:#fff;
@@ -31,14 +119,11 @@ body {
       letter-spacing: 0;
       font-weight: 300;
 
-      &:first-child{
-        color: #FF5868;
-      }
-
       &:last-child{
         margin-right:0px;
       }
     }
+
   }
 
   .lineContainer{
@@ -80,6 +165,7 @@ body {
     &:last-child{
       background-image: linear-gradient(-46deg, #04A5C1 0%, #A2E891 100%);
     }
+
   }
 
   .iconList{
@@ -89,10 +175,12 @@ body {
     left: 9%;
     z-index: 4;
     padding-left:0;
+
     li{
       display: inline-block;
       margin-right: 9px;
     }
+
   }
 
   .name{
@@ -140,6 +228,7 @@ body {
     bottom:0;
     z-index: 4;
     height: 500px;
+
     .aboutMe{
       font-family: 'Abril Fatface', cursive;
       font-size: 60px;
@@ -190,6 +279,7 @@ body {
     right: 40px;
     z-index: 4;
     padding-left:0;
+
     li{
       display: inline-block;
       margin-right: 26px;
@@ -198,6 +288,7 @@ body {
         margin-right: 0px;
       }
     }
+
   }
 
 

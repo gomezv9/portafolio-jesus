@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jesus Bueno</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="container works">
+
+      <div class="lineContainer"></div>
+
+      <img class="logo" src="images/logo2.svg">
+
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">My Work</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <div class="copy">Copyright © 2017 jesusbwebdesigner.com</div>
+
+      <h1>My Work</h1>
+
+      <div class="carousel">
+          <a class="carousel-item" href="#one!"><div style="background:url(images/kisstleThumb.jpg);background-size: cover; background-position:center"></div>
+          </a>
+          <a class="carousel-item" href="#two!"><div style="background:url(images/kisstleThumb.jpg);background-size: cover; background-position:center"></div></a>
+          <a class="carousel-item" href="#three!"><div style="background:url(images/kisstleThumb.jpg);background-size: cover; background-position:center"></div></a>
+          <a class="carousel-item" href="#four!"><div style="background:url(images/kisstleThumb.jpg);background-size: cover;"></div></a>
+          <a class="carousel-item" href="#five!"><div style="background:url(images/kisstleThumb.jpg);background-size: cover;"></div></a>
+          
+      </div>
+
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <script>
+
+      $(document).ready(function(){
+          $('.carousel').carousel({
+            'duration':50,
+            'shift':200,
+            'indicators':true,
+            'noWrap': false
+          });
+      });    
+
+    </script>
+    <!-- endbuild -->
+  </body>
+</html>
