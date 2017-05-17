@@ -39,7 +39,7 @@
       <nav>
         <a href="index.html">Home</a>
         <a href="works.html">My Work</a>
-        <a href="#">Contact</a>
+        <a href="mailto:jesusbwebdesigner@gmail.com">Contact</a>
       </nav>
 
       <div class="copy">Copyright © 2017 jesusbwebdesigner.com</div>
@@ -47,9 +47,9 @@
       <h1>My Work</h1>
 
       <div class="carousel">
-          <a class="carousel-item" id="modalGalleryTrigger">
+          <a class="carousel-item">
             <div class="imgItem" style="background:url(images/kisstleThumb.jpg);background-size: cover; background-position:center">
-              <div class="lineContainerItem">
+              <div class="lineContainerItem" id="modalGalleryTrigger">
                 
               <p class="nameP">Kisstle</p>
               <p class="nameC">Worked at Ideaware.</p>
@@ -106,9 +106,9 @@
 
       <ul class="iconListNet">
 
-        <li><img src="images/iconFB.svg"></li>
-        <li><img src="images/iconInst.svg"></li>
-        <li><img src="images/iconLin.svg"></li>
+        <li><a href="https://www.facebook.com/buenonunez1" target="_blank"><img src="images/iconFB.svg"></a></li>
+        <li><a href="https://www.instagram.com/jbuenonunez/?hl=en" target="_blank"><img src="images/iconInst.svg"></a></li>
+        <li><a href="https://www.linkedin.com/in/jesus-bueno-nu%C3%B1ez-00a190125/" target="_blank"><img src="images/iconLin.svg"></a></li>
 
       </ul> 
 
@@ -266,7 +266,7 @@
           });
         
 
-          $('body').on('click',"#modalGalleryTrigger",function(event) {
+          $('body').on('click touchend',"#modalGalleryTrigger",function(event) {
             $("#modalCreate").css("display","block");
             $("#modalGallery1").fadeIn("fast");
             $("body").css("overflow","hidden");
@@ -279,7 +279,7 @@
             $("#modalCreate").css("background-color","inherit");
           });
 
-          $('body').on('click',"#modalGalleryTrigger2",function(event) {
+          $('body').on('click touchend',"#modalGalleryTrigger2",function(event) {
             $("#modalCreate2").css("display","block");
             $("#modalGallery2").fadeIn("fast");
             $("body").css("overflow","hidden");
@@ -292,7 +292,7 @@
             $("#modalCreate2").css("background-color","inherit");
           });
 
-          $('body').on('click',"#modalGalleryTrigger3",function(event) {
+          $('body').on('click touchend',"#modalGalleryTrigger3",function(event) {
             $("#modalCreate3").css("display","block");
             $("#modalGallery3").fadeIn("fast");
             $("body").css("overflow","hidden");
