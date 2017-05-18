@@ -96,6 +96,7 @@ body {
       width: 640px !important;
       height: 400px !important; 
       top:-20px;
+      z-index: 40 !important;
     }
       .carousel .carousel-item .imgItem {
         width: 100%;
@@ -122,6 +123,7 @@ body {
           top:10px;
           left:10px;
           z-index: 4;
+          cursor: pointer;
         }
 
         .nameP{
@@ -379,7 +381,7 @@ body {
 
 }
 
-#modalCreate, #modalCreate2, #modalCreate3 {
+#modalCreate1, #modalCreate2, #modalCreate3, #modalCreate4, #modalCreate5, #modalCreate6, #modalCreate7 {
   display: none;
   position: fixed;
   z-index: 1001;
@@ -500,11 +502,15 @@ body {
       overflow-y: auto;
       z-index: 5;
       position: relative;
+
+        img{
+          width: 90%;
+        }
     }
 
 }
 
-#modalCreate{
+#modalCreate1{
 
   .modalGallery{
     &:after{
@@ -550,6 +556,66 @@ body {
     &:after{
       content:'';
       background-image: linear-gradient(-180deg, rgba(245,119,120,0.00) 0%, #000 100%);
+      height: 127px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      position:absolute;
+    }
+  }
+}
+
+#modalCreate4{
+
+  .modalGallery{
+    &:after{
+      content:'';
+      background-image: linear-gradient(-180deg, rgba(245,119,120,0.00) 0%, #2FBEDD 100%);
+      height: 127px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      position:absolute;
+    }
+  }
+}
+
+#modalCreate5{
+
+  .modalGallery{
+    &:after{
+      content:'';
+      background-image: linear-gradient(-180deg, rgba(245,119,120,0.00) 0%, #55E4C2 100%);
+      height: 127px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      position:absolute;
+    }
+  }
+}
+
+#modalCreate6{
+
+  .modalGallery{
+    &:after{
+      content:'';
+      background-image: linear-gradient(-180deg, rgba(245,119,120,0.00) 0%, #1EB0CA 100%);
+      height: 127px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      position:absolute;
+    }
+  }
+}
+
+#modalCreate7{
+
+  .modalGallery{
+    &:after{
+      content:'';
+      background-image: linear-gradient(-180deg, rgba(245,119,120,0.00) 0%, #EC88A5 100%);
       height: 127px;
       width: 100%;
       bottom: 0;
@@ -659,6 +725,7 @@ body {
   .container.works .carousel .carousel-item{
     width: 320px !important;
     height: 400px !important;
+    cursor: pointer;
   }
   .container.works{
     height: 800px;
