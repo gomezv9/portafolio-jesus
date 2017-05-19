@@ -149,6 +149,16 @@ body {
           font-weight: 300;
         }
 
+        .textWar{
+          color: #fff;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          font-size: 12px;
+          font-family: 'Montserrat', sans-serif;
+          display: block;
+        }
+
         .iconListPC{
           margin: 0;
           position: absolute;
@@ -651,7 +661,22 @@ body {
   }
 }
 
+@media screen and (max-width: 1440px) {
+
+  .container.works h1{
+    font-size:46px;
+    top:85px;
+  }
+  .container.works .carousel{
+    top:98px;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
+  .container.works .carousel .carousel-item .imgItem .textWar{
+    display: none;
+  }
   .container{
     .col50{
       width: 100%;

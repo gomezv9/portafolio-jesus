@@ -53,6 +53,7 @@
                 
               <p class="nameP">Kisstle</p>
               <p class="nameC">Worked at Ideaware.</p>
+              <span class="textWar">Double click to view more</span>
 
               <ul class="iconListPC">
 
@@ -582,15 +583,65 @@
             'noWrap': false
           });
 
-      }); 
-      // $(document).on('click',"#modalGalleryTrigger"+_num,function(event) {
-      //       console.log("entro");
-      //       $("#modalCreate"+_num).css("display","block");
-      //       $("#modalGallery"+_num).fadeIn("fast");
-      //       $("body").css("overflow","hidden");
-      // }); 
+          $( "#modalGalleryTrigger" ).dblclick(function(event) {
+            console.log(event);
+            $("#modalCreate1").css("display","block");
+            $("#modalGallery1").fadeIn("fast");
+            $("body").css("overflow","hidden");
+          });
 
-      $(document).on('click touchend',"#modalGalleryTrigger",function(event) {
+          $( "#modalGalleryTrigger2" ).dblclick(function(event) {
+            event.stopPropagation();
+            event.preventDefault();
+            $("#modalCreate2").css("display","block");
+            $("#modalGallery2").fadeIn("fast");
+            $("body").css("overflow","hidden");
+          });
+
+          $( "#modalGalleryTrigger3" ).dblclick(function(event) {
+            event.stopPropagation();
+            event.preventDefault();
+            $("#modalCreate3").css("display","block");
+            $("#modalGallery3").fadeIn("fast");
+            $("body").css("overflow","hidden");
+          });
+
+          $( "#modalGalleryTrigger4" ).dblclick(function(event) {
+            event.stopPropagation();
+            event.preventDefault();
+            $("#modalCreate4").css("display","block");
+            $("#modalGallery4").fadeIn("fast");
+            $("body").css("overflow","hidden");
+          });
+
+
+          $( "#modalGalleryTrigger5" ).dblclick(function(event) {
+            event.stopPropagation();
+            event.preventDefault();
+            $("#modalCreate5").css("display","block");
+            $("#modalGallery5").fadeIn("fast");
+            $("body").css("overflow","hidden");
+          });
+
+          $( "#modalGalleryTrigger6" ).dblclick(function(event) {
+            event.stopPropagation();
+            event.preventDefault();
+            $("#modalCreate6").css("display","block");
+            $("#modalGallery6").fadeIn("fast");
+            $("body").css("overflow","hidden");
+          });
+
+          $( "#modalGalleryTrigger7" ).dblclick(function(event) {
+            event.stopPropagation();
+            event.preventDefault();
+            $("#modalCreate7").css("display","block");
+            $("#modalGallery7").fadeIn("fast");
+            $("body").css("overflow","hidden");
+          });
+
+      }); 
+
+          $(document).on('touchend',"#modalGalleryTrigger",function(event) {
             $("#modalCreate1").css("display","block");
             $("#modalGallery1").fadeIn("fast");
             $("body").css("overflow","hidden");
@@ -601,7 +652,7 @@
             $("#modalGallery1").fadeOut("fast");
             $("#modalCreate1").css("background-color","inherit");
           });
-          $(document).on('click touchend',"#modalGalleryTrigger2",function(event) {
+          $(document).on('touchend',"#modalGalleryTrigger2",function(event) {
             $("#modalCreate2").css("display","block");
             $("#modalGallery2").fadeIn("fast");
             $("body").css("overflow","hidden");
@@ -612,7 +663,7 @@
             $("#modalGallery2").fadeOut("fast");
             $("#modalCreate2").css("background-color","inherit");
           });
-          $(document).on('click touchend',"#modalGalleryTrigger3",function(event) {
+          $(document).on('touchend',"#modalGalleryTrigger3",function(event) {
             $("#modalCreate3").css("display","block");
             $("#modalGallery3").fadeIn("fast");
             $("body").css("overflow","hidden");
@@ -623,7 +674,7 @@
             $("#modalGallery3").fadeOut("fast");
             $("#modalCreate3").css("background-color","inherit");
           });
-          $(document).on('click touchend',"#modalGalleryTrigger4",function(event) {
+          $(document).on('touchend',"#modalGalleryTrigger4",function(event) {
             $("#modalCreate4").css("display","block");
             $("#modalGallery4").fadeIn("fast");
             $("body").css("overflow","hidden");
@@ -634,7 +685,7 @@
             $("#modalGallery4").fadeOut("fast");
             $("#modalCreate4").css("background-color","inherit");
           });
-          $(document).on('click touchend',"#modalGalleryTrigger5",function(event) {
+          $(document).on('touchend',"#modalGalleryTrigger5",function(event) {
             $("#modalCreate5").css("display","block");
             $("#modalGallery5").fadeIn("fast");
             $("body").css("overflow","hidden");
@@ -645,7 +696,7 @@
             $("#modalGallery5").fadeOut("fast");
             $("#modalCreate5").css("background-color","inherit");
           });
-          $(document).on('click touchend',"#modalGalleryTrigger6",function(event) {
+          $(document).on('touchend',"#modalGalleryTrigger6",function(event) {
             $("#modalCreate6").css("display","block");
             $("#modalGallery6").fadeIn("fast");
             $("body").css("overflow","hidden");
@@ -656,7 +707,7 @@
             $("#modalGallery6").fadeOut("fast");
             $("#modalCreate6").css("background-color","inherit");
           });
-          $(document).on('click touchend',"#modalGalleryTrigger7",function(event) {
+          $(document).on('touchend',"#modalGalleryTrigger7",function(event) {
             $("#modalCreate7").css("display","block");
             $("#modalGallery7").fadeIn("fast");
             $("body").css("overflow","hidden");
@@ -667,23 +718,6 @@
             $("#modalGallery7").fadeOut("fast");
             $("#modalCreate7").css("background-color","inherit");
           });
-
-      // function modalClick(_num){
-      //     $(document).on('click',"#modalGalleryTrigger"+_num,function(event) {
-      //       console.log("entro");
-      //       $("#modalCreate"+_num).css("display","block");
-      //       $("#modalGallery"+_num).fadeIn("fast");
-      //       $("body").css("overflow","hidden");
-      //     }); 
-
-      //     $("#modalGallery"+_num+" .close").click(function(event) {
-      //       $("body").css("overflow","visible");
-      //       $("#modalCreate"+_num).fadeOut("fast");
-      //       $("#modalGallery"+_num).fadeOut("fast");
-      //       $("#modalCreate"+_num).css("background-color","inherit");
-      //     });
-      // }
-
 
     </script>
   </body>
